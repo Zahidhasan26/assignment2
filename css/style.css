@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  margin: o;
+  padding: 0;
+}
+/* root elements */
+:root {
+  --primary-color: #ff42a5;
+  --secondary-color: #4ec5f7;
+  --font-color: #0b0223;
+  --font-size-m: 1rem;
+  --font-size-l: 3rem;
+  --font-size-xl: 5.5rem;
+}
+
+/* global elements */
+h1 {
+  font-size: var(--font-size-xl);
+  line-height: normal;
+  margin: 0;
+}
+h2 {
+  font-size: var(--font-size-l);
+  margin: 0;
+  line-height: normal;
+  font-weight: 600;
+}
+p {
+  font-size: var(--font-size-m);
+  color: var(--font-color);
+}
+.gradient-text {
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.btn-pink {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+  border-radius: 3rem;
+  border: 1px solid white;
+  font-size: var(--font-size-m);
+  font-weight: 600px;
+}
+.btn-pink:hover {
+  color: var(--primary-color);
+  background-color: white;
+  border: 1px solid var(--primary-color);
+}
+.btn-blue {
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 20px 40px;
+  border-radius: 3rem;
+  border: 1px solid white;
+  font-size: var(--font-size-m);
+  font-weight: 600px;
+}
+.btn-blue:hover {
+  color: var(--secondary-color);
+  background-color: white;
+  border: 1px solid var(--secondary-color);
+}
+.pink {
+  color: var(--primary-color);
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.flex {
+    display: flex;
+}
+
+/* body syles */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.nav-title {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+}
+.nav-title > img {
+  width: 86px;
+}
+.nav-title > h2 {
+    margin-left: 10px;
+}
+
+.nav-menu > ul {
+  display: flex;
+  list-style: none;
+  font-size: var(--font-size-m);
+}
+.nav-menu > ul > li {
+  margin-right: 30px;
+}
+.nav-menu > ul > li:last-child {
+  margin-right: 0;
+}
+.banner{
+    display: flex;
+    background-image: url("../images/Group\ 14.png");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+}
+.banner-text {
+    width: 40%;
+    margin-top: 0;
+    /* margin-bottom: auto; */
+    padding: 80px 0;
+}
+.banner-image img {
+    width: 80%;
+    padding-left: 20%;
+}
