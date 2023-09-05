@@ -260,7 +260,7 @@ footer {
 }
 
 /* responsive css */
-@media screen and (max-width:600px){ 
+@media screen and (max-width:480px){ 
 .nav {
     display: flex;
     flex-direction: column;
@@ -302,5 +302,31 @@ footer {
 }
 .btn-icon img {
     width: 30px;
+}
+}
+@media (min-width: 481px) and (max-width: 768px){
+
+.banner {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.reverse-coloumn {
+    flex-direction: column-reverse;
+}
+.banner-text, .banner-image {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background-image: none;
+}
+.banner-image img {
+    width: 90%;
+    padding: 0;
+}
+.image-box {
+    width: 48%;
+}
+.image-boxes {
+    flex-wrap: wrap;
 }
 }
